@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Nilkolai Leonov](https://up.htmlacademy.ru/htmlcss/26/user/831753).
-* Наставник: `Неизвестно`.
+* Студент: [Nilkolai Leonov](https://htmlacademy.ru/profile/strongardo).
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/maxkuznetsov).
 
 ---
 
