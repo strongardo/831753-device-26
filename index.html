@@ -12,10 +12,11 @@
     <a>
       <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
     </a>
-    <p>
-      <a href="#"></a>
-      Поиск по сайту
-    </p>
+    <form action="#" method="GET">
+      <!-- <a href="#" aria-label="Найти"></a> -->
+      <button type="submit">Найти</button>
+      <input type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+    </form>
     <div>
       <ul>
         <li>
@@ -60,9 +61,9 @@
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="#">Подробнее</a>
         <p>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
         </p>
         <table>
           <tr>
@@ -86,9 +87,9 @@
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
         <a href="#">Подробнее</a>
         <p>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
         </p>
         <table>
           <tr>
@@ -108,9 +109,9 @@
           мощным лазером, замаскированным под стандартную камеру.</p>
         <a href="#">Подробнее</a>
         <p>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
         </p>
         <table>
           <tr>
@@ -200,16 +201,16 @@
       <h2>Популярные производители</h2>
       <ul>
         <li>
-          <img src="img/logo-1.png" width="260" height="100" alt="Dajiang Innovation Technology Co.">
+          <img src="img/logo-1.png" width="260" height="100" alt="Логотип 'Dajiang Innovation Technology Co.'">
         </li>
         <li>
-          <img src="img/logo-2.png" width="260" height="100" alt="SP Gadgets">
+          <img src="img/logo-2.png" width="260" height="100" alt="Логотип 'SP Gadgets'">
         </li>
         <li>
-          <img src="img/logo-3.png" width="260" height="100" alt="GoPro">
+          <img src="img/logo-3.png" width="260" height="100" alt="Логотип 'GoPro'">
         </li>
         <li>
-          <img src="img/logo-4.png" width="260" height="100" alt="VIVE">
+          <img src="img/logo-4.png" width="260" height="100" alt="Логотип 'VIVE'">
         </li>
       </ul>
     </section>
@@ -231,7 +232,8 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
         бывает.</p>
-      <a href="#"><img src="img/map.png" width="560" height="222" alt="Наше местоположение"></a>
+      <a href="#" aria-label="Как до нас добраться"><img src="img/map.png" width="560" height="222"
+          alt="г. Москва, ул. Строителей, 15"></a>
       <a href="#">Напишите нам</a>
     </section>
 
@@ -260,7 +262,7 @@
       <li><a href="#">Инстаграм</a></li>
       <li><a href="#">Твиттер</a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 1">
       <img src="img/logo-html.svg" alt="Логотип Академии" width="27" height="35">
     </a>
 
@@ -269,7 +271,21 @@
   <section>
     <h2>Форма обратной связи</h2>
     <button type="button">Закрыть</button>
-    <!-- Здесь будет форма -->
+    <form action="#" method="POST">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" rows="7" cols="60" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
   </section>
 
   <section>
