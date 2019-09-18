@@ -33,3 +33,205 @@
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.page-header {
+  background-color: #f7e296;
+}
+
+.page-header input[type="search"] {
+  font: inherit;
+  opacity: 0.3;
+  border: none;
+  background: none;
+}
+
+.page-header input[type="search"]:hover {
+  opacity: 0.6;
+}
+
+.page-header input[type="search"]:focus {
+  opacity: 1;
+}
+
+.search-decor {
+  background-image: url("../img/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.popular-products {
+  position: relative;
+}
+
+.popular-products__list, .control-list {
+  list-style: none;
+}
+
+.popular-products__list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.control-list {
+  position: absolute;
+  top: 50px;
+  right: 500px;
+}
+
+.slide-content {
+  display: none;
+}
+
+input:checked+.slide-content {
+  display: block;
+}
+
+.popular-products-item__lead {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.popular-description__characteristics {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.popular-description__values {
+  color: #000000;
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.product-categories__list {
+  list-style: none;
+}
+
+.product-category__logo {
+  background-color: #f7e296;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+}
+
+.product-category__logo--virtual {
+  background-image: url("../img/popular-1.svg");
+}
+
+.product-category__logo--monopods {
+  background-image: url("../img/popular-2.svg");
+}
+
+.product-category__logo--cameras {
+  background-image: url("../img/popular-3.svg");
+}
+
+.product-category__logo--bracelets {
+  background-image: url("../img/popular-4.svg");
+}
+
+.product-category__logo--watch {
+  background-image: url("../img/popular-5.svg");
+}
+
+.product-category__logo--quadrocopters {
+  background-image: url("../img/popular-6.svg");
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services__list, .services__tabs {
+  list-style: none;
+}
+
+.services-tabs__item {
+  position: relative;
+}
+
+.services-tabs__item--delivery::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  background-image: url("../img/delivery.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 136px;
+  height: 164px;
+}
+
+.services-tabs__item--warranty::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 320px;
+  background-image: url("../img/warranty.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 194px;
+}
+
+.services-tabs__item--credit::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  background-image: url("../img/credit.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 186px;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+.page-footer {
+  background-color: #464646;
+}
+
+.footer-contacts {
+  color: #ffffff;
+}
