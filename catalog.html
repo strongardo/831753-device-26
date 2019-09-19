@@ -4,10 +4,6 @@
 <head>
   <title>Каталог</title>
   <meta charset="utf-8">
-  <link rel="preload" href="/fonts/gilroylight.woff2" as="font">
-  <link rel="preload" href="/fonts/gilroyextrabold.woff2" as="font">
-  <link rel="preload" href="/fonts/opensans.woff2" as="font">
-  <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,8 +11,9 @@
 <body>
 
   <header class="page-header">
-    <a>
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+    <a href="index.html">
+      <img class="logo-catalog" src="img/logo-device.svg" width="163" height="35"
+        alt="Логотип интернет-магазина Device">
     </a>
     <form action="#" method="GET">
       <span class="search-decor"></span>
@@ -65,8 +62,8 @@
     <section class="filtr">
       <h2 class="section-title uppercase">Фильтр:</h2>
       <form action="#" method="GET">
-        <p>
-          <label for="cost">Стоимость</label>
+        <p class="filtr__cost filtr-cost">
+          <label class="filtr-cost__title" for="cost">Стоимость</label>
           <input type="range" name="cost" id="cost" min="0" max="5000">
         </p>
         <fieldset>
@@ -107,7 +104,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button" type="submit"><span class="button-text">Показать</span></button>
       </form>
     </section>
 
@@ -126,50 +123,50 @@
               class="visually-hidden">Вниз</span></button>
         </p>
       </div>
-      <ul>
-        <li>
+      <ul class="products__list">
+        <li class="product-item">
           <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-          <h3><a href="#">Любительская селфи-палка</a></h3>
+          <h3 class="product-item__title"><a href="#">Любительская селфи-палка</a></h3>
           <span>500руб.</span>
-          <p>
+          <p class="product-item__hover">
             <a href="#">В корзину</a>
             <button type="button">Добавить к сравнению</button>
           </p>
         </li>
-        <li>
+        <li class="product-item">
           <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-          <h3><a href="#">Профессиональная селфи-палка</a></h3>
+          <h3 class="product-item__title"><a href="#">Профессиональная селфи-палка</a></h3>
           <span>1500руб.</span>
-          <p>
+          <p class="product-item__hover">
             <a href="#">В корзину</a>
             <button type="button">Добавить к сравнению</button>
           </p>
         </li>
-        <li>
+        <li class="product-item">
           <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-          <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+          <h3 class="product-item__title"><a href="#">Непотопляемая селфи-палка</a></h3>
           <span>2500руб.</span>
-          <p>
+          <p class="product-item__hover">
             <a href="#">В корзину</a>
             <button type="button">Добавить к сравнению</button>
           </p>
         </li>
-        <li>
+        <li class="product-item">
           <img src="img/item-4.jpg" alt="Селфи-палка 'Следуй за мной'" width="360" height="380">
-          <h3><a href="#">Селфи-палка "Следуй за мной"</a></h3>
+          <h3 class="product-item__title"><a href="#">Селфи-палка "Следуй за мной"</a></h3>
           <span>4900руб.</span>
-          <p>
+          <p class="product-item__hover">
             <a href="#">В корзину</a>
             <button type="button">Добавить к сравнению</button>
           </p>
         </li>
       </ul>
-      <ul>
-        <li><a href="#">Назад</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Впред</a></li>
+      <ul class="products__pagination">
+        <li><a class="uppercase pagination-direct" href="#"><span class="pagination-direct-text">Назад</span></a></li>
+        <li><a class="interactive-catalog pagination-page" href="#">1</a></li>
+        <li><a class="interactive-catalog pagination-page" href="#">2</a></li>
+        <li><a class="interactive-catalog pagination-page" href="#">3</a></li>
+        <li><a class="uppercase pagination-direct" href="#"><span class="pagination-direct-text">Вперед</span></a></li>
       </ul>
     </section>
 

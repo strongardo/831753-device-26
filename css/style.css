@@ -7,15 +7,13 @@
   /* Путь к файлу со шрифтом */
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gilroy ExtraBold';
-  src: local('Gilroy-ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroyextrabold.woff2'), url('../fonts/gilroyextrabold.woff');
+  src: local('Gilroy-ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/Gilroy-ExtraBold.woff2'), url('../fonts/Gilroy-ExtraBold.woff');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -23,7 +21,6 @@
   src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2'), url('../fonts/opensans.woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -31,7 +28,6 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensanslight.woff2'), url('../fonts/opensanslight.woff');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 body {
@@ -421,6 +417,14 @@ input:checked+.slide-content {
   line-height: 30px;
 }
 
+.logo-catalog:hover {
+  opacity: 0.6;
+}
+
+.logo-catalog:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs span, .breadcrumbs a {
   font-size: 14px;
   line-height: 24px;
@@ -457,7 +461,7 @@ input:checked+.slide-content {
   outline: none;
 }
 
-.sort-button {
+.products__sort .sort-button {
   background-position: center;
   background-repeat: no-repeat;
   width: 11px;
@@ -470,6 +474,63 @@ button.sort-button--up {
 
 button.sort-button--down {
   background-image: url("../img/icon-down-dir.svg");
+}
+
+.filtr legend, .filtr-cost__title {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filtr ul {
+  list-style: none;
+}
+
+.filtr label {
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.products__list {
+  list-style: none;
+}
+
+.product-item__title a {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.product-item span {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.product-item__hover {
+  display: none;
+}
+
+.products__pagination {
+  list-style: none;
+  background-color: #ebebeb;
+}
+
+.pagination-direct:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-direct:active .pagination-direct-text {
+  opacity: 0.3;
+}
+
+.pagination-page {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .page-footer {
