@@ -59,11 +59,37 @@ a {
   overflow: hidden;
 }
 
-.section-title {
+.button {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #f0c52e;
+  border: none;
+}
+
+.button:active .button-text {
+  opacity: 0.3;
+}
+
+.page-title, .section-title {
   color: #000000;
   font-family: "Gilroy ExtraBold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+}
+
+.uppercase {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .page-header {
@@ -105,6 +131,11 @@ a {
 
 .user-navigation, .main-menu__list, .catalog-list {
   list-style: none;
+}
+
+.main-menu__list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .user-navigation__login {
@@ -258,6 +289,20 @@ input:checked+.slide-content {
 
 .product-categories__list {
   list-style: none;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.product-categories__item {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.product-category__title {
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .product-category__logo {
@@ -266,6 +311,14 @@ input:checked+.slide-content {
   background-repeat: no-repeat;
   width: 160px;
   height: 160px;
+}
+
+.product-categories__item:hover .product-category__logo {
+  background-color: #f0c52e;
+}
+
+.product-categories__item:active {
+  opacity: 0.3;
 }
 
 .product-category__logo--virtual {
@@ -294,6 +347,11 @@ input:checked+.slide-content {
 
 .services {
   background-color: #e5e5e5;
+}
+
+.services-list__button:active {
+  color: #f7e184;
+  background-color: #000000;
 }
 
 .services__list, .services__tabs {
@@ -340,14 +398,127 @@ input:checked+.slide-content {
   height: 186px;
 }
 
-.brands-list {
+.brands__list {
   list-style: none;
+  display: flex;
+}
+
+.brands__list img {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.brands__list img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.about-us__list {
+  list-style: circle;
+  color: #000000;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.breadcrumbs span, .breadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.interactive-catalog {
+  opacity: 0.3;
+}
+
+.interactive-catalog:hover {
+  opacity: 0.6;
+}
+
+.interactive-catalog:active {
+  opacity: 1;
+}
+
+.products__sort button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.sort-button {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+}
+
+button.sort-button--up {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+button.sort-button--down {
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .page-footer {
   background-color: #464646;
 }
 
+.interactive:hover {
+  opacity: 0.6;
+}
+
+.interactive:active {
+  opacity: 0.3;
+}
+
 .footer-contacts {
   color: #ffffff;
+}
+
+.user-functions--footer a, .main-menu__list--footer a {
+  color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list__item {
+  margin-right: 22px;
+}
+
+.social-list__item a {
+  display: block;
+  background-color: #7e7e7e;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social-list__item--fb a {
+  background-image: url("../img/fb.svg");
+}
+
+.social-list__item--in a {
+  background-image: url("../img/instagram.svg");
+}
+
+.social-list__item--tw a {
+  background-image: url("../img/twitter.svg");
 }
