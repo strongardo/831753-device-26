@@ -112,16 +112,25 @@
       <h2 class="visually-hidden">Товары</h2>
       <div class="products__sort">
         <h3 class="uppercase">Сортировка:</h3>
-        <p><button class="interactive-catalog" type="button">По цене</button>
-          <button class="interactive-catalog" type="button">По типу</button>
-          <button class="interactive-catalog" type="button">По популярности</button>
-        </p>
-        <p>
-          <button class="interactive-catalog sort-button sort-button--up" type="button"><span
-              class="visually-hidden">Вверх</span></button>
-          <button class="interactive-catalog sort-button sort-button--down" type="button"><span
-              class="visually-hidden">Вниз</span></button>
-        </p>
+        <form action="#" method="GET">
+          <p>
+            <input class="visually-hidden" type="radio" name="sort" value="price" id="sort-price">
+            <input class="visually-hidden" type="radio" name="sort" value="type" id="sort-type">
+            <input class="visually-hidden" type="radio" name="sort" value="popular" id="sort-popular">
+            <label class="interactive-catalog" for="sort-price">По цене</label>
+            <label class="interactive-catalog" for="sort-type">По типу</label>
+            <label class="interactive-catalog" for="sort-popular">По популярности</label>
+          </p>
+
+          <p>
+            <input class="visually-hidden" type="radio" name="sort-dir" value="up" id="sort-up">
+            <input class="visually-hidden" type="radio" name="sort-dir" value="down" id="sort-down">
+            <label class="interactive-catalog sort-button sort-button--up" for="sort-up"><span
+                class="visually-hidden">Вверх</span></label>
+            <label class="interactive-catalog sort-button sort-button--down" for="sort-down"><span
+                class="visually-hidden">Вниз</span></label>
+          </p>
+        </form>
       </div>
       <ul class="products__list">
         <li class="product-item">
