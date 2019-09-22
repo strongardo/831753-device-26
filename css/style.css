@@ -30,6 +30,14 @@
   font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -53,6 +61,11 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .button {
@@ -90,12 +103,21 @@ a {
 
 .page-header {
   background-color: #f7e296;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 300px;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.page-header form {
+.header-logo {
+  margin-bottom: 12px;
+}
+
+/* .page-header form {
   display: flex;
   align-items: center;
-}
+} */
 
 .user-functions a {
   color: #000000;
@@ -116,34 +138,47 @@ a {
   opacity: 1;
 }
 
-.search-decor {
+/* .search-decor {
   background-image: url("../img/search.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: block;
   width: 16px;
   height: 16px;
-}
+} */
 
 .user-navigation, .main-menu__list, .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation li, .main-menu__list li, .catalog-list li {
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .user-navigation__login {
   position: relative;
 }
 
-.user-functions__compare, .user-functions__cart {
-  position: relative;
-  margin-left: 50px;
+.user-functions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
-.user-navigation__login::before {
+.user-functions__compare, .user-functions__cart {
+  position: relative;
+  /* margin-left: 50px; */
+}
+
+/* .user-navigation__login::before {
   content: "";
   position: absolute;
   top: 9px;
@@ -177,7 +212,7 @@ a {
   background-repeat: no-repeat;
   width: 12px;
   height: 12px;
-}
+} */
 
 .user-navigation__login:hover, .user-functions__cart:hover, .user-functions__compare:hover {
   opacity: 0.6;
@@ -239,10 +274,56 @@ a {
 
 .popular-products {
   position: relative;
+  /* padding-left: 80px; */
+  padding-right: 80px;
+  margin-top: -107px;
+  margin-bottom: 95px;
+}
+
+.slide__wrapper {
+  display: flex;
+  /* align-items: flex-end; */
+}
+
+.slide-decor {
+  width: 100px;
+  height: 7px;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+}
+
+.slide-image--1 {
+  /* width: 384px; */
+  margin-right: 120px;
+  margin-left: 80px;
+}
+
+.slide-image--2 {
+  /* width: 384px; */
+  margin-right: 120px;
+  margin-left: 116px;
+}
+
+.slide-image--3 {
+  padding-top: 60px;
+  margin-right: 60px;
+  margin-left: 31px;
+}
+
+.slide-description {
+  width: 500px;
+  padding-top: 35px;
 }
 
 .popular-products__list, .control-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-products__list li, .control-list li {
+  margin: 0;
+  padding: 0;
 }
 
 .popular-products__list {
@@ -252,8 +333,13 @@ a {
 
 .control-list {
   position: absolute;
-  top: 50px;
-  right: 500px;
+  top: 315px;
+  right: 150px;
+  display: flex;
+}
+
+.control-list li {
+  margin-left: 22px;
 }
 
 .slide-content {
@@ -269,6 +355,16 @@ input:checked+.slide-content {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
+  white-space: pre-line;
+}
+
+.slide-description p {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.popular-products_description {
+  margin-top: 55px;
 }
 
 .popular-description__characteristics {
@@ -283,7 +379,13 @@ input:checked+.slide-content {
   line-height: 48px;
 }
 
+.product-categories {
+  margin-bottom: 60px;
+}
+
 .product-categories__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   /* justify-content: space-between; */
@@ -291,6 +393,8 @@ input:checked+.slide-content {
 
 .product-categories__item {
   width: 160px;
+  margin: 0;
+  padding: 0;
   margin-right: 40px;
 }
 
@@ -343,6 +447,31 @@ input:checked+.slide-content {
 
 .services {
   background-color: #e5e5e5;
+  margin-bottom: 106px;
+}
+
+.services-wrapper {
+  display: flex;
+}
+
+.services__list, .services__tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services__list li, .services__tabs li {
+  margin: 0;
+  padding: 0;
+}
+
+.services__list {
+  width: 280px;
+  margin-right: 120px;
+}
+
+.services__tabs {
+  width: 700px;
 }
 
 .services-list__button:active {
@@ -350,15 +479,11 @@ input:checked+.slide-content {
   background-color: #000000;
 }
 
-.services__list, .services__tabs {
-  list-style: none;
-}
-
 .services-tabs__item {
   position: relative;
 }
 
-.services-tabs__item--delivery::after {
+/* .services-tabs__item--delivery::after {
   content: "";
   position: absolute;
   bottom: 20px;
@@ -392,6 +517,10 @@ input:checked+.slide-content {
   background-repeat: no-repeat;
   width: 156px;
   height: 186px;
+} */
+
+.brands {
+  margin-bottom: 70px;
 }
 
 .brands__list {
@@ -409,12 +538,50 @@ input:checked+.slide-content {
   filter: grayscale(0);
 }
 
+.sections-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 460px;
+}
+
+.contacts {
+  width: 560px;
+}
+
+.section-decor {
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  margin-bottom: 44px;
+}
+
+.section-title--about, .section-title--contacts {
+  margin-bottom: 46px;
+}
+
+.about-us__describe, .contacts__describe {
+  margin-bottom: 40px;
+}
+
+.contacts__map {
+  margin-bottom: 70px;
+}
+
 .about-us__list {
   list-style: circle;
   color: #000000;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
+  margin-bottom: 70px;
+  margin-top: 28px;
+}
+
+.about-us__list li {
+  margin-bottom: 12px;
 }
 
 .logo-catalog:hover {
@@ -533,6 +700,24 @@ input:checked+.slide-content {
 
 .page-footer {
   background-color: #464646;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  margin-top: 85px;
+}
+
+.page-footer a {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.user-functions--footer {
+  width: 300px;
 }
 
 .interactive:hover {
@@ -545,10 +730,23 @@ input:checked+.slide-content {
 
 .footer-contacts {
   color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.main-menu__list--footer {
+  width: 440px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .user-functions--footer a, .main-menu__list--footer a {
   color: #ffffff;
+}
+
+.footer-decor {
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
 }
 
 .social-list {
