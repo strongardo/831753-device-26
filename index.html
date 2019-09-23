@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="page-header container">
+  <header class="page-header page-header--main container">
     <div class="header-logo">
       <a>
         <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
@@ -204,36 +204,46 @@
     <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
-        <div services-wrapper>
+        <div class="services-wrapper" >
           <ul class="services__list services-list">
-            <li><a class="button services-list__button" href="#">Доставка</a></li>
-            <li><a class="button services-list__button" href="#">Гарантия</a></li>
-            <li><a class="button services-list__button" href="#">Кредит</a></li>
+            <li><label for="services-delivery"><a class="button services-list__button">Доставка</a></label></li>
+            <li><label for="services-warranty"><a class="button services-list__button">Гарантия</a></label></li>
+            <li><label for="services-credit"><a class="button services-list__button">Кредит</a></label></li>
           </ul>
+          <div class="services-decor"></div>
           <ul class="services__tabs services-tabs">
             <li class="services-tabs__item services-tabs__item--delivery">
-              <h3 class="section-title">Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему<br>
-                подъезду совершенно бесплатно! Ведь мы неплохо<br>
-                заработаем, поднимая его на ваш этаж.
-              </p>
+              <input class="visually-hidden" type="radio" name="services" id="services-delivery" checked>
+              <div class="slide-content">
+                <h3 class="section-title">Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему<br>
+                  подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                  заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
             </li>
             <li class="services-tabs__item services-tabs__item--warranty">
-              <h3 class="section-title">Гарантия</h3>
-              <p>
-                Если из-за возгорания купленного у нас товара у вас сгорит<br>
-                дом — не переживайте, мы выдадим вам новый.<br>
-                Товар, не дом, конечно же.
-              </p>
+              <input class="visually-hidden" type="radio" name="services" id="services-warranty">
+              <div class="slide-content">
+                <h3 class="section-title">Гарантия</h3>
+                <p>
+                  Если из-за возгорания купленного у нас товара у вас сгорит<br>
+                  дом — не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же.
+                </p>
+              </div>
             </li>
             <li class="services-tabs__item services-tabs__item--credit">
-              <h3 class="section-title">Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные<br>
-                консультанты подберут для вас наиболее выгодные<br>
-                условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
+              <input class="visually-hidden" type="radio" name="services" id="services-credit">
+              <div class="slide-content">
+                <h3 class="section-title">Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще! Кредитные<br>
+                  консультанты подберут для вас наиболее выгодные<br>
+                  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
