@@ -314,15 +314,12 @@ a {
 }
 
 .popular-products__link:hover::before {
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
   height: 40px;
   top: -9px;
 }
 
 .slide__wrapper {
   display: flex;
-  /* align-items: flex-end; */
 }
 
 .slide-image--1 {
