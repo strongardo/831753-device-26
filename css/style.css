@@ -316,6 +316,7 @@ a {
 .popular-products__link:hover::before {
   height: 40px;
   top: -9px;
+  transition: ease-out 0.5s;
 }
 
 .slide__wrapper {
@@ -402,11 +403,11 @@ input:checked+.slide-content {
   background-color: #ffffff;
 }
 
-.popular-products-item__lead::after {
-  content: "01";
+.slide-description::after {
+  content: attr(data-number);
   position: absolute;
-  top: -23px;
-  right: -12px;
+  top: -25px;
+  right: 40px;
   font-family: 'Gilroy ExtraBold';
   font-size: 179.2px;
   line-height: 179.2px;
