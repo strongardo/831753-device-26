@@ -17,8 +17,7 @@
       </a>
     </div>
     <div class="user-functions">
-      <form action="#" method="GET">
-        <span class="search-decor"></span>
+      <form action="#" method="GET" class="search-form">
         <input type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
       </form>
       <ul class="user-navigation">
@@ -26,8 +25,10 @@
           <a href="#">Войти</a>
         </li>
       </ul>
-      <a class="user-functions__compare" href="#">Сравнить</a>
-      <a class="user-functions__cart" href="#">Корзина</a>
+      <p class="user-functions__wrapper">
+        <a class="user-functions__compare" href="#">Сравнить</a>
+        <a class="user-functions__cart" href="#">Корзина</a>
+      </p>
     </div>
     <nav class="main-menu">
       <ul class="main-menu__list">
@@ -95,7 +96,7 @@
               <div class="slide-image slide-image--2">
                 <img src="img/slider-2.png" width="345" height="485" alt="Самая длинная селфи-палка">
               </div>
-              <div class="slide-description"  data-number="02">
+              <div class="slide-description" data-number="02">
                 <div class="slide-decor"></div>
                 <!-- <span>02</span> -->
                 <b class="popular-products-item__lead">Худеем
@@ -122,7 +123,7 @@
               <div class="slide-image slide-image--3">
                 <img src="img/slider-3.png" width="526" height="334" alt="Самая длинная селфи-палка">
               </div>
-              <div class="slide-description"  data-number="03">
+              <div class="slide-description" data-number="03">
                 <div class="slide-decor"></div>
                 <!-- <span>03</span> -->
                 <b class="popular-products-item__lead">Порхает как бабочка,
@@ -203,7 +204,7 @@
     <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
-        <div class="services-wrapper" >
+        <div class="services-wrapper">
           <ul class="services__list services-list">
             <li><label for="services-delivery"><a class="button services-list__button">Доставка</a></label></li>
             <li><label for="services-warranty"><a class="button services-list__button">Гарантия</a></label></li>
