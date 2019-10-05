@@ -13,15 +13,15 @@
   <header class="page-header page-header--inner container">
     <div class="header-logo">
       <a href="index.html">
-        <img class="logo-catalog" src="img/logo-device.svg" width="163" height="35"
-          alt="Логотип интернет-магазина Device">
+        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
       </a>
     </div>
     <div class="user-functions">
       <form action="#" method="GET" class="search-form">
-        <input type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+        <input class="search" type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+        <a href="#" class="search-button">Найти</a>
       </form>
-      <a href="#">Борат Сагдиев</a>
+      <a class="header-user header-inner__user" href="#">Валентин Петухов</a>
       <ul class="user-navigation">
         <li class="user-navigation__login">
           <a href="#">Выйти</a>
@@ -32,17 +32,29 @@
         <a class="user-functions__cart" href="#">Корзина</a>
       </p>
     </div>
-    <nav class="main-menu">
+    <nav class="main-menu main-menu--header">
       <ul class="main-menu__list">
         <li class="main-menu__item">
           <a class="main-menu__catalog" href="catalog.html">Каталог товаров</a>
           <ul class="catalog-list container">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
+            <li>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#">Доставка</a></li>
@@ -57,8 +69,8 @@
       <h1 class="page-title catalog-title">Моноподы для селфи</h1>
 
       <p class="breadcrumbs">
-        <a href="index.html">Главная</a> >
-        <a href="catalog.html">Каталог товаров</a> >
+        <a class="breadcrumbs__item" href="index.html">Главная</a>
+        <a class="breadcrumbs__item" href="catalog.html">Каталог товаров</a>
         <span>Моноподы для селфи</span>
       </p>
     </div>
@@ -75,13 +87,13 @@
 
 
         <div class="products-sort">
-          <h3 class="uppercase">Сортировка:</h3>
+          <h3 class="uppercase products-sort__title">Сортировка:</h3>
           <form action="#" method="GET">
             <input class="visually-hidden" type="radio" name="sort" value="price" id="sort-price">
             <input class="visually-hidden" type="radio" name="sort" value="type" id="sort-type">
             <input class="visually-hidden" type="radio" name="sort" value="popular" id="sort-popular">
             <label class="interactive-catalog" for="sort-price">По цене</label>
-            <label class="interactive-catalog" for="sort-type">По типу</label>
+            <label class="interactive-catalog sort-type" for="sort-type">По типу</label>
             <label class="interactive-catalog" for="sort-popular">По популярности</label>
             <input class="visually-hidden" type="radio" name="sort-dir" value="up" id="sort-up">
             <input class="visually-hidden" type="radio" name="sort-dir" value="down" id="sort-down">
@@ -167,7 +179,7 @@
             <li class="product-item">
               <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
               <div class="product-item__description">
-                <h3 class="product-item__title"><a href="#">Профессиональная селфи-палка</a></h3>
+                <h3 class="product-item__title"><a href="#">Профессиональная <br> селфи-палка</a></h3>
                 <span>1500руб.</span>
               </div>
               <div class="product-item__hover">
@@ -199,12 +211,15 @@
             </li>
           </ul>
           <ul class="products__pagination">
-            <li><a class="uppercase pagination-direct" href="#"><span class="pagination-direct-text">Назад</span></a>
+            <li class="pagination-direct--back"><a class="uppercase pagination-direct" href="#"><span
+                  class="pagination-direct-text">Назад</span></a>
             </li>
-            <li><a class="interactive-catalog pagination-page" href="#">1</a></li>
-            <li><a class="interactive-catalog pagination-page" href="#">2</a></li>
-            <li><a class="interactive-catalog pagination-page" href="#">3</a></li>
-            <li><a class="uppercase pagination-direct" href="#"><span class="pagination-direct-text">Вперед</span></a>
+            <li class="pagination-numeral"><a class="interactive-catalog pagination-page pagination-page--current"
+                href="#">1</a></li>
+            <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">2</a></li>
+            <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">3</a></li>
+            <li class="pagination-direct--forward"><a class="uppercase pagination-direct" href="#"><span
+                  class="pagination-direct-text">Вперед</span></a>
             </li>
           </ul>
         </section>
@@ -214,36 +229,36 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer inner-footer">
     <div class="container">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper footer-wrapper--top">
         <div class="footer-logo">
           <a href="index.html">
             <img class="interactive" src="img/logo-gold.svg" width="163" height="35"
               alt="Логотип интернет-магазина Device">
           </a>
         </div>
-        <div class="user-functions user-functions--footer">
-          <a href="#">Борат Сагдиев</a>
-          <ul class="user-navigation">
-            <li class="user-navigation__login user-navigation__login--footer">
+        <div class="user-functions--footer">
+          <a class="footer__user footer__login interactive" href="#">Валентин Петухов</a>
+          <ul class="user-navigation--footer interactive">
+            <li>
               <a href="#">Выйти</a>
             </li>
           </ul>
-          <a class="user-functions__compare user-functions__compare--footer" href="#">Сравнить</a>
-          <a class="user-functions__cart user-functions__cart--footer" href="#">Корзина</a>
+          <a class="footer__compare interactive" href="#">Сравнить</a>
+          <a class="footer__cart interactive" href="#">Корзина</a>
         </div>
       </div>
-      <div class="footer-wrapper">
+      <div class="footer-wrapper footer-wrapper--middle">
         <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
         <ul class="main-menu__list main-menu__list--footer">
           <li><a class="interactive" href="delivery.html">Доставка</a></li>
           <li><a class="interactive" href="guarantee.html">Гарантия</a></li>
           <li><a class="interactive" href="contacts.html">Контакты</a></li>
         </ul>
-        <p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
+        <p class="footer-contacts footer-contacts--right">Тел.: +7 (495) 495-95-95</p>
       </div>
-      <div class="footer-wrapper">
+      <div class="footer-wrapper footer-wrapper--bottom">
         <div class="footer-decor"></div>
         <ul class="social-list">
           <li class="social-list__item social-list__item--fb"><a class="interactive" href="#"><span
@@ -256,7 +271,7 @@
                 class="visually-hidden">Твиттер</span></a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"
+        <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss"
           aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 1">
           <img class="interactive" src="img/logo-html.svg" alt="Логотип Академии" width="27" height="35">
         </a>
