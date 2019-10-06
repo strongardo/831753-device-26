@@ -19,7 +19,7 @@
     <div class="user-functions">
       <form action="#" method="GET" class="search-form">
         <input class="search" type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-        <a href="#" class="search-button">Найти</a>
+        <a href="#" class="search-button"><span class="search-button__text">Найти</span></a>
       </form>
       <ul class="user-navigation header-user">
         <li class="user-navigation__login">
@@ -68,11 +68,16 @@
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
 
     <section class="popular-products container">
+
+      <input type="radio" id="product-1" name="popular-slider" class="visually-hidden" checked>
+      <input type="radio" id="product-2" name="popular-slider" class="visually-hidden">
+      <input type="radio" id="product-3" name="popular-slider" class="visually-hidden">
+
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-products__list">
         <li class="popular-products__item popular-products-item">
-          <input type="radio" id="slide-1" name="slider" class="visually-hidden" checked>
-          <div class="slide-content">
+
+          <div class="slide-content popular-product__1">
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
             <div class="slide__wrapper">
               <div class="slide-image slide-image--1">
@@ -102,8 +107,8 @@
           </div>
         </li>
         <li>
-          <input type="radio" id="slide-2" name="slider" class="visually-hidden">
-          <div class="slide-content">
+
+          <div class="slide-content popular-product__2">
             <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
             <div class="slide__wrapper">
               <div class="slide-image slide-image--2">
@@ -128,8 +133,8 @@
           </div>
         </li>
         <li>
-          <input type="radio" id="slide-3" name="slider" class="visually-hidden slide-3">
-          <div class="slide-content">
+
+          <div class="slide-content popular-product__3">
             <h3 class="visually-hidden">Необычные квадрокоптеры</h3>
             <div class="slide__wrapper">
               <div class="slide-image slide-image--3">
@@ -159,13 +164,13 @@
       </ul>
       <ul class="control-list">
         <li class="control-list__item">
-          <label for="slide-1"></label>
+          <label for="product-1"></label>
         </li>
         <li class="control-list__item">
-          <label for="slide-2"></label>
+          <label for="product-2"></label>
         </li>
         <li class="control-list__item">
-          <label for="slide-3"></label>
+          <label for="product-3"></label>
         </li>
       </ul>
     </section>
