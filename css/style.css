@@ -1427,12 +1427,6 @@ ul.services__tabs {
   background-repeat: no-repeat;
 }
 
-.modal-map iframe {
-  position: relative;
-  z-index: 2;
-  border: none;
-}
-
 .modal-show {
   display: block;
   animation: bounce 0.6s;
