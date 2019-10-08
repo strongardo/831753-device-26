@@ -90,7 +90,7 @@
         <div class="products-sort">
           <h3 class="uppercase products-sort__title">Сортировка:</h3>
           <form class="sort-form" action="#" method="GET">
-            <input class="visually-hidden" type="radio" name="sort" value="price" id="sort-price">
+            <input class="visually-hidden" type="radio" name="sort" value="price" id="sort-price" checked>
             <label class="interactive-catalog" for="sort-price">По цене</label>
             <input class="visually-hidden" type="radio" name="sort" value="type" id="sort-type">
             <label class="interactive-catalog sort-type" for="sort-type">По типу</label>
@@ -115,10 +115,22 @@
         <section class="filtr">
           <div class="filtr-container">
             <form action="#" method="GET">
-              <p class="filtr__cost filtr-cost">
-                <label class="filtr-cost__title" for="cost">Стоимость</label>
-                <input type="range" name="cost" id="cost" min="0" max="5000">
-              </p>
+              <fieldset class="filter-item">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
+                </div>
+              </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
                 <ul>
