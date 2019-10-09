@@ -1034,7 +1034,7 @@ ul.services__tabs {
 }
 
 .filtr-container {
-  margin-left: 55px;
+  margin-left: 59px;
   margin-right: 65px;
   width: 200px;
 }
@@ -1064,20 +1064,99 @@ ul.services__tabs {
 .filter-item {
   margin: 0;
   padding: 0;
-
   border: none;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.filter-item ul, .filter-item li {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-item--price {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.filter-item--color {
+  margin-bottom: 30px;
+}
+
+.filter-item--bluetooth {
+  margin-bottom: 35px;
+}
+
+.filter-item--color label, .filter-item--bluetooth label {
+  padding-left: 40px;
+  position: relative;
+}
+
+.input-indicator {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 27px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.input-indicator:hover {
+  opacity: 0.6;
+}
+
+.input-indicator--checkbox {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-item--color input:checked + .input-indicator--checkbox {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.input-indicator--radio {
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter-item--bluetooth input:checked + .input-indicator--radio {
+  background-image: url("../img/radio-on.svg");
 }
 
 .range-filter {
   width: 200px;
-  margin-top: 30px;
+}
+
+.filter-item--price legend {
+  margin-bottom: 33px;
+}
+
+.filter-item--color legend {
+  margin-bottom: 19px;
+}
+
+.filter-item--bluetooth legend {
+  margin-bottom: 15px;
 }
 
 .filter-item legend {
+  display: block;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 24px;
+  position: relative;
+  padding-top: 15px;
+}
+
+.filter-item legend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
 }
 
 .range-controls {
@@ -1090,7 +1169,7 @@ ul.services__tabs {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 60%;
   height: 2px;
   background: #91c92f;
 }
@@ -1110,12 +1189,17 @@ ul.services__tabs {
   cursor: pointer;
 }
 
+.range-controls .toggle:active {
+  border-width: 10px;
+  top: -11px;
+}
+
 .range-controls .toggle-min {
-  left: 18px;
+  left: -2px;
 }
 
 .range-controls .toggle-max {
-  left: 140px;
+  left: 110px;
 }
 
 .price-controls {
@@ -1124,8 +1208,11 @@ ul.services__tabs {
 
 .price-controls label {
   display: inline-block;
-  width: 50%;
   text-transform: lowercase;
+}
+
+.price-controls label:first-child {
+  margin-right: 30px;
 }
 
 .price-controls label, .price-controls input {
@@ -1141,24 +1228,31 @@ ul.services__tabs {
   border: none;
   background: none;
   width: 40px;
-  margin-left: 5px;
+  margin-left: 2px;
   margin-top: 10px;
 }
 
-.price-controls input:first-child{
-
-  background: red;
-
+.filtr-link {
+  margin-left: 35px;
 }
 
+.filtr-link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 8px;
+  background-color: #f0c52e;
+  z-index: -1;
+}
 
-
-
-
-
-
-
-
+.filtr-link:hover::before {
+  height: 40px;
+  top: -8px;
+  transition: ease-out 0.5s;
+}
 
 .products__list {
   list-style: none;
