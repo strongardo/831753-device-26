@@ -515,15 +515,15 @@ a {
   display: none;
 }
 
-#product-1:checked~.popular-products__list .popular-product__1,
-#product-2:checked~.popular-products__list .popular-product__2,
-#product-3:checked~.popular-products__list .popular-product__3 {
+.product-1:checked~.popular-products__list .popular-product__1,
+.product-2:checked~.popular-products__list .popular-product__2,
+.product-3:checked~.popular-products__list .popular-product__3 {
   display: block;
 }
 
-#product-1:checked~.control-list label[for="product-1"],
-#product-2:checked~.control-list label[for="product-2"],
-#product-3:checked~.control-list label[for="product-3"] {
+.product-1:checked~.control-list label[for="product-1"],
+.product-2:checked~.control-list label[for="product-2"],
+.product-3:checked~.control-list label[for="product-3"] {
   background-image: url("../img/slider-button.svg");
 }
 
@@ -695,21 +695,21 @@ ul.services-list {
   margin-top: -17px;
 }
 
-#services-delivery:checked ~ .services-tabs .tab--delivery,
-#services-warranty:checked ~ .services-tabs .tab--warranty,
-#services-credit:checked ~ .services-tabs .tab--credit {
+.services-delivery:checked ~ .services-tabs .tab--delivery,
+.services-warranty:checked ~ .services-tabs .tab--warranty,
+.services-credit:checked ~ .services-tabs .tab--credit {
   display: block;
 }
 
-#services-delivery:checked ~.services-list .button-delivery,
-#services-warranty:checked ~.services-list .button-warranty,
-#services-credit:checked ~.services-list .button-credit {
+.services-delivery:checked ~.services-list .button-delivery,
+.services-warranty:checked ~.services-list .button-warranty,
+.services-credit:checked ~.services-list .button-credit {
   color: #f7e184;
 }
 
-#services-delivery:checked ~.services-list .button-delivery::before,
-#services-warranty:checked ~.services-list .button-warranty::before,
-#services-credit:checked ~.services-list .button-credit::before {
+.services-delivery:checked ~.services-list .button-delivery::before,
+.services-warranty:checked ~.services-list .button-warranty::before,
+.services-credit:checked ~.services-list .button-credit::before {
   width: 280px;
   height: 40px;
 
@@ -1066,7 +1066,7 @@ ul.services__tabs {
   display: flex;
 }
 
-.sort-form input:checked+label {
+.sort-form input:checked + label {
   opacity: 1;
 }
 
@@ -1075,6 +1075,8 @@ ul.services__tabs {
 
   width: 11px;
   height: 10px;
+
+  vertical-align: middle;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -1307,6 +1309,7 @@ ul.services__tabs {
   display: inline-block;
 
   text-transform: lowercase;
+  vertical-align: top;
 }
 
 .price-controls label:first-child {
@@ -1351,7 +1354,7 @@ ul.services__tabs {
 
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
   width: 760px;
 
   list-style: none;
@@ -1428,8 +1431,7 @@ ul.services__tabs {
   min-height: 380px;
   padding-top: 182px;
 
-  background-color: #eeeeee;
-  opacity: 0.7;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .product-hover__link::before {
@@ -1880,14 +1882,14 @@ ul.services__tabs {
 }
 
 .modal input, .modal textarea {
-  padding: 15px 20px;
+  padding: 12px 20px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
 
-  border: none;
+  border: 3px solid transparent;
   background-color: #f2f2f2;
 }
 
@@ -1900,12 +1902,9 @@ ul.services__tabs {
 }
 
 .modal input:focus, .modal textarea:focus {
-  padding-top: 12px;
-  padding-bottom: 12px;
-
   background-color: #ffffff;
   outline: none;
-  border: 3px solid #f7e296;
+  border-color: #f7e296;
 }
 
 .modal input[type="text"], .modal input[type="email"] {
