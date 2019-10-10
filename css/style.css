@@ -1775,7 +1775,7 @@ ul.services__tabs {
 
 .modal {
   position: fixed;
-  top: 5%;
+  top: 50%;
   left: 50%;
   z-index: 10;
 
@@ -1785,7 +1785,8 @@ ul.services__tabs {
   color: #000000;
 
   background-color: #ffffff;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%);
 }
 
 .modal-feedback {
@@ -1793,8 +1794,6 @@ ul.services__tabs {
 
   width: 950px;
   padding: 90px 100px;
-  margin-left: -475px;
-
 }
 
 .modal-map {
@@ -1802,7 +1801,6 @@ ul.services__tabs {
 
   width: 960px;
   height: 560px;
-  margin-left: -480px;
 
   background-image: url("../img/map-big.png");
   background-position: center;
