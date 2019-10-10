@@ -114,7 +114,7 @@
 
         <section class="filtr">
           <div class="filtr-container">
-              <h2 class="visually-hidden">Фильтр:</h2>
+            <h2 class="visually-hidden">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="GET">
               <fieldset class="filter-item filter-item--price">
                 <legend>Стоимость:</legend>
@@ -246,18 +246,18 @@
               </div>
             </li>
           </ul>
-          <ul class="products__pagination">
-            <li class="pagination-direct--back"><a class="uppercase pagination-direct" href="#"><span
-                  class="pagination-direct-text">Назад</span></a>
-            </li>
-            <li class="pagination-numeral"><a class="interactive-catalog pagination-page pagination-page--current"
-                href="#">1</a></li>
-            <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">2</a></li>
-            <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">3</a></li>
-            <li class="pagination-direct--forward"><a class="uppercase pagination-direct" href="#"><span
-                  class="pagination-direct-text">Вперед</span></a>
-            </li>
-          </ul>
+          <div class="products__pagination">
+            <span class="pagination-direct"><a class="uppercase pagination-direct-text" href="#">Назад</a>
+            </span>
+            <ul class="pagination-numeration">
+              <li class="pagination-numeral"><a class="interactive-catalog pagination-page pagination-page--current"
+                  href="#">1</a></li>
+              <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">2</a></li>
+              <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">3</a></li>
+            </ul>
+            <span class="pagination-direct"><a class="uppercase pagination-direct-text" href="#">Вперед</a>
+            </span>
+          </div>
         </section>
 
       </div>
