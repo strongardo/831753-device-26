@@ -34,7 +34,7 @@
     <nav class="main-menu main-menu--header">
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__catalog" href="catalog.html">Каталог товаров</a>
+          <a class="main-menu__catalog" href="#">Каталог товаров</a>
           <ul class="catalog-list container">
             <li>
               <ul>
@@ -69,9 +69,12 @@
 
     <section class="popular-products container">
 
-      <input type="radio" id="product-1" name="popular-slider" class="product-1 visually-hidden" checked>
-      <input type="radio" id="product-2" name="popular-slider" class="product-2 visually-hidden">
-      <input type="radio" id="product-3" name="popular-slider" class="product-3 visually-hidden">
+      <input type="radio" id="product-1" name="popular-slider" class="product-1 visually-hidden"
+        aria-label="Открыть первый слайд" checked>
+      <input type="radio" id="product-2" name="popular-slider" class="product-2 visually-hidden"
+        aria-label="Открыть второй слайд">
+      <input type="radio" id="product-3" name="popular-slider" class="product-3 visually-hidden"
+        aria-label="Открыть третий слайд">
 
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-products__list">
@@ -112,7 +115,7 @@
             <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
             <div class="slide__wrapper">
               <div class="slide-image slide-image--2">
-                <img src="img/slider-2.png" width="345" height="485" alt="Самая длинная селфи-палка">
+                <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <div class="slide-description" data-number="02">
                 <div class="slide-decor"></div>
@@ -138,7 +141,7 @@
             <h3 class="visually-hidden">Необычные квадрокоптеры</h3>
             <div class="slide__wrapper">
               <div class="slide-image slide-image--3">
-                <img src="img/slider-3.png" width="526" height="334" alt="Самая длинная селфи-палка">
+                <img src="img/slider-3.png" width="526" height="334" alt="Необычный квадрокоптер">
               </div>
               <div class="slide-description" data-number="03">
                 <div class="slide-decor"></div>
@@ -162,6 +165,7 @@
           </div>
         </li>
       </ul>
+
       <ul class="control-list">
         <li class="control-list__item">
           <label for="product-1"></label>
@@ -173,6 +177,7 @@
           <label for="product-3"></label>
         </li>
       </ul>
+
     </section>
 
     <section class="product-categories container">
@@ -185,7 +190,7 @@
           </a>
         </li>
         <li class="product-categories__item product-category">
-          <a href="#">
+          <a href="catalog.html">
             <div class="product-category__logo product-category__logo--monopods"></div>
             <h3 class="product-category__title">Моноподы<br> для селфи</h3>
           </a>
@@ -221,9 +226,12 @@
       <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-wrapper">
-          <input type="radio" id="services-delivery" name="services" class="services-delivery visually-hidden" checked>
-          <input type="radio" id="services-warranty" name="services" class="services-warranty visually-hidden">
-          <input type="radio" id="services-credit" name="services" class="services-credit visually-hidden">
+          <input type="radio" id="services-delivery" name="services" class="services-delivery visually-hidden"
+            aria-label="Открыть слайд 'Доставка'" checked>
+          <input type="radio" id="services-warranty" name="services" class="services-warranty visually-hidden"
+            aria-label="Открыть слайд 'Гарантия'">
+          <input type="radio" id="services-credit" name="services" class="services-credit visually-hidden"
+            aria-label="Открыть слайд 'Кредит'">
           <ul class="services__list services-list">
             <li>
               <label class="button button-delivery services-list__link" for="services-delivery">Доставка</label>
@@ -349,12 +357,15 @@
             Всякое
             бывает.</p>
           <div class="contacts__map">
-            <a class="link-map" href="#" aria-label="Как до нас добраться"><img src="img/map.png" width="560"
+            <a class="link-map" href="map.html" aria-label="Как до нас добраться"><img src="img/map.png" width="560"
                 height="222" alt="г. Москва, ул. Строителей, 15"></a>
           </div>
-          <a class="button section__link section__link--contacts" href="#"><span class="button-text">Напишите
+          <a class="button section__link section__link--contacts" href="feedback.html"><span
+              class="button-text">Напишите
               нам</span></a>
         </section>
+
+
       </div>
 
     </div>
@@ -386,7 +397,7 @@
           <li><a class="interactive" href="guarantee.html">Гарантия</a></li>
           <li><a class="interactive" href="contacts.html">Контакты</a></li>
         </ul>
-        <p class="footer-contacts footer-contacts--right">Тел.: +7 (495) 495-95-95</p>
+        <p class="footer-contacts footer-contacts--right">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
       </div>
       <div class="footer-wrapper footer-wrapper--bottom">
         <div class="footer-decor"></div>
