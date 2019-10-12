@@ -1,31 +1,39 @@
 @font-face {
-  font-family: 'Gilroy Light';
-  /* Имя шрифта */
-  src: local('Gilroy-Light'), /* Полное название шрифта */
-  local('Gilroy-Light'), /* PostScript название */
-  url('../fonts/gilroylight.woff2'), url('../fonts/gilroylight.woff');
-  /* Путь к файлу со шрифтом */
+  font-family: "Gilroy Light";
+  src: local("Gilroy Light"),
+  local("Gilroy Light"),
+  url("../fonts/gilroylight.woff2"),
+  url("../fonts/gilroylight.woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy ExtraBold';
-  src: local('Gilroy-ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroyextrabold.woff2'), url('../fonts/gilroyextrabold.woff');
+  font-family: "Gilroy ExtraBold";
+  src: local("Gilroy-ExtraBold"),
+  local("Gilroy-ExtraBold"),
+  url("../fonts/gilroyextrabold.woff2"),
+  url("../fonts/gilroyextrabold.woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2'), url('../fonts/opensans.woff');
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+  local("OpenSans"),
+  url("../fonts/opensans.woff2"),
+  url("../fonts/opensans.woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans Light';
-  src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensanslight.woff2'), url('../fonts/opensanslight.woff');
+  font-family: "Open Sans Light";
+  src: local("Open Sans Light"),
+  local("OpenSans-Light"),
+  url("../fonts/opensanslight.woff2"),
+  url("../fonts/opensanslight.woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -164,11 +172,12 @@ a {
 
 .search {
   font: inherit;
+  line-height: 15px;
 
   margin: 0;
   padding: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
   padding-left: 40px;
   width: 355px;
 
@@ -569,13 +578,25 @@ a {
   background-color: #ffffff;
 }
 
+.lead--selfie {
+  width: 400px;
+}
+
+.lead--bracelets {
+  width: 300px;
+}
+
+.lead--quadrocopters {
+  width: 550px;
+}
+
 .slide-description::after {
   content: attr(data-number);
   position: absolute;
   top: -13px;
   right: 49px;
 
-  font-family: 'Gilroy ExtraBold';
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 179.2px;
   line-height: 179.2px;
   color: #ffffff;
@@ -584,6 +605,7 @@ a {
 .slide-description p {
   margin-top: 20px;
   margin-bottom: 47px;
+  width: 490px;
 
   letter-spacing: 0.2px;
 }
@@ -658,6 +680,10 @@ a {
   line-height: 24px;
   color: #000000;
   letter-spacing: 0.2px;
+}
+
+.product-category__title--monopods {
+  width: 95px;
 }
 
 .product-category__logo {
@@ -802,6 +828,8 @@ ul.services__tabs {
 }
 
 .services-tabs__item p {
+  width: 430px;
+
   letter-spacing: 0.25px
 }
 
@@ -809,7 +837,7 @@ ul.services__tabs {
   content: "";
   position: absolute;
   top: 10px;
-  right: -280px;
+  right: -264px;
 
   background-repeat: no-repeat;
 }
@@ -1377,7 +1405,7 @@ ul.services__tabs {
 }
 
 .price-controls label, .price-controls input {
-  font-family: 'Gilroy Light';
+  font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #bfbfbf;
@@ -1518,7 +1546,7 @@ ul.services__tabs {
   margin-top: 30px;
   margin-left: 105px;
 
-  font-family: 'Open Sans Light';
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
   color: #000000;
