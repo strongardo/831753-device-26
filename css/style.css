@@ -117,6 +117,10 @@ a {
   color: #000000;
 }
 
+.section-title {
+  letter-spacing: 0.7px;
+}
+
 .uppercase {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 16px;
@@ -145,7 +149,7 @@ a {
 }
 
 .header-logo {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   margin-top: -19px;
 }
 
@@ -276,7 +280,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   align-items: center;
 }
@@ -293,6 +297,8 @@ a {
 
 .header-inner__user {
   margin-right: 20px;
+
+  letter-spacing: 0.2px;
 }
 
 .user-functions__compare::before {
@@ -356,7 +362,7 @@ a {
 
 .main-menu--header li:nth-child(4) {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: -3.5px;
 }
 
 .main-menu__list a {
@@ -451,7 +457,7 @@ a {
 }
 
 .slide-image--1 {
-  margin-right: 126px;
+  margin-right: 125px;
   margin-left: 90px;
 }
 
@@ -548,7 +554,7 @@ a {
   font-size: 47px;
   line-height: 56px;
   color: #000000;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
 }
 
 .popular-products-item__lead::before {
@@ -566,8 +572,8 @@ a {
 .slide-description::after {
   content: attr(data-number);
   position: absolute;
-  top: -25px;
-  right: 40px;
+  top: -13px;
+  right: 49px;
 
   font-family: 'Gilroy ExtraBold';
   font-size: 179.2px;
@@ -593,10 +599,21 @@ a {
   padding: 0;
 }
 
-.popular-description__characteristics td {
+.popular-products__description td {
   margin: 0;
   padding: 0;
+}
+
+.popular-description__characteristics td {
+  padding-top: 5px;
+}
+
+.popular-description__characteristics td:first-child {
   padding-right: 80px;
+}
+
+.popular-description__characteristics td:nth-child(2) {
+  padding-right: 75px;
 }
 
 .popular-description__characteristics {
@@ -640,6 +657,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.2px;
 }
 
 .product-category__logo {
@@ -780,7 +798,11 @@ ul.services__tabs {
 .services-tabs__item h3 {
   margin: 0;
   padding: 0;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
+}
+
+.services-tabs__item p {
+  letter-spacing: 0.25px
 }
 
 .tab::after {
@@ -891,8 +913,17 @@ ul.services__tabs {
 .section-title--about, .section-title--contacts {
   position: relative;
 
-  margin-bottom: 46px;
+  margin-bottom: 44px;
   padding-top: 52px;
+}
+
+.about-us__describe,
+.contacts__describe {
+  letter-spacing: 0.1px;
+}
+
+.about-us__describe--2 {
+  letter-spacing: -0.2px;
 }
 
 .about-us__describe {
@@ -911,7 +942,7 @@ ul.services__tabs {
   margin: 0;
   padding: 0;
   margin-bottom: 63px;
-  margin-top: 38px;
+  margin-top: 70px;
   padding-left: 35px;
 
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -976,13 +1007,15 @@ ul.services__tabs {
   margin-left: 59px;
   margin-bottom: 20px;
 
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
 }
 
 .breadcrumbs {
   margin-bottom: 44px;
   margin-top: 10px;
   margin-left: 59px;
+
+  letter-spacing: 0.1px;
 }
 
 .breadcrumbs__item {
@@ -1004,7 +1037,7 @@ ul.services__tabs {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs span, .breadcrumbs a {
+.breadcrumbs span {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -1068,17 +1101,16 @@ ul.services__tabs {
 .products-sort .sort-type {
   margin-left: 25px;
   margin-right: 25px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.2px;
 }
 
 .filtr__title h2 {
   margin: 0;
   padding: 0;
-}
-
-.products__sort label {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .sort-wrapper {
@@ -1109,7 +1141,7 @@ ul.services__tabs {
 }
 
 .sort-button--down {
-  margin-left: 13px;
+  margin-left: 15px;
 
   background-image: url("../img/icon-down-dir.svg");
 }
@@ -1181,8 +1213,8 @@ ul.services__tabs {
 }
 
 .filter-item--price {
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 68px;
+  margin-bottom: 25px;
 }
 
 .filter-item--color {
@@ -1322,7 +1354,7 @@ ul.services__tabs {
 }
 
 .range-controls .toggle-min {
-  left: -2px;
+  left: -4px;
 }
 
 .range-controls .toggle-max {
@@ -1391,7 +1423,7 @@ ul.services__tabs {
 .product-item {
   position: relative;
 
-  margin-top: 42px;
+  margin-top: 45px;
   width: 360px;
 }
 
@@ -1420,10 +1452,10 @@ ul.services__tabs {
 .product-item__description {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   justify-content: space-between;
+  align-items: baseline;
 
-  padding-top: 18px;
+  padding-top: 22px;
 }
 
 .product-item__title {
@@ -1432,17 +1464,21 @@ ul.services__tabs {
   width: 260px;
 }
 
+.product-item__title--pro {
+  width: 230px;
+}
+
 .product-item__title a {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.2px;
 }
 
-.product-item span {
-  margin: 0;
-
-  font-size: 18px;
+.product-item__description span {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -1503,7 +1539,7 @@ ul.services__tabs {
 .products__pagination {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: baseline;
 
   margin-bottom: 76px;
@@ -1534,6 +1570,8 @@ ul.services__tabs {
   justify-content: space-between;
 
   margin: 0;
+  margin-right: auto;
+  margin-left: 190px;
   padding: 0 20px;
   width: 125px;
 
@@ -1576,7 +1614,7 @@ ul.services__tabs {
 .footer-wrapper--top {
   align-items: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .footer-logo {
@@ -1646,7 +1684,7 @@ ul.services__tabs {
 .footer__user::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 0;
 
   width: 13px;
@@ -1672,7 +1710,7 @@ ul.services__tabs {
 .footer__cart::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 0;
 
   width: 12px;
@@ -1700,7 +1738,9 @@ ul.services__tabs {
 }
 
 .footer-contacts {
-  margin-bottom: 45px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
 
   color: #ffffff;
 }
@@ -1746,7 +1786,7 @@ ul.services__tabs {
   margin: 0;
   padding: 0 9px;
   margin-right: auto;
-  margin-left: 390px;
+  margin-left: 420px;
   width: 160px;
 
   list-style: none;
