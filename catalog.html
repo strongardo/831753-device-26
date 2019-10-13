@@ -4,8 +4,8 @@
 <head>
   <title>Каталог</title>
   <meta charset="utf-8">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +66,6 @@
   <main>
     <div class="container">
       <h1 class="page-title catalog-title">Моноподы для селфи</h1>
-
       <p class="breadcrumbs">
         <a class="breadcrumbs__item" href="index.html"><span>Главная</span></a>
         <a class="breadcrumbs__item" href="#"><span>Каталог товаров</span></a>
@@ -110,8 +109,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Установить минимальное значение стоимости"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Установить максимальное значение стоимости"></div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>

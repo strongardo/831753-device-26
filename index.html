@@ -4,8 +4,8 @@
 <head>
   <title>HTML Academy: Девайс</title>
   <meta charset="utf-8">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,15 +72,14 @@
         aria-label="Открыть третий слайд">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-products__list">
-        <li class="popular-products__item popular-products-item">
+        <li class="popular-products-item">
           <div class="slide-content popular-product__1">
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
             <div class="slide__wrapper">
-              <div class="slide-image slide-image--1">
+              <div class="slide-image-1">
                 <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
               </div>
               <div class="slide-description" data-number="01">
-                <div class="slide-decor"></div>
                 <b class="popular-products-item__lead lead--selfie">Делай селфи,
                   как Бен Стиллер!</b>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
@@ -102,15 +101,14 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="popular-products-item">
           <div class="slide-content popular-product__2">
             <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
             <div class="slide__wrapper">
-              <div class="slide-image slide-image--2">
+              <div class="slide-image-2">
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <div class="slide-description" data-number="02">
-                <div class="slide-decor"></div>
                 <b class="popular-products-item__lead lead--bracelets">Худеем
                   правильно!</b>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -127,15 +125,14 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="popular-products-item">
           <div class="slide-content popular-product__3">
             <h3 class="visually-hidden">Необычные квадрокоптеры</h3>
             <div class="slide__wrapper">
-              <div class="slide-image slide-image--3">
+              <div class="slide-image-3">
                 <img src="img/slider-3.png" width="526" height="334" alt="Необычный квадрокоптер">
               </div>
               <div class="slide-description" data-number="03">
-                <div class="slide-decor"></div>
                 <b class="popular-products-item__lead lead--quadrocopters">Порхает как бабочка, жалит как пчела!</b>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
                   мощным лазером, замаскированным под стандартную камеру.</p>
@@ -170,38 +167,38 @@
     <section class="product-categories container">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="product-categories__list">
-        <li class="product-categories__item product-category">
+        <li class="product-categories__item">
           <a href="#">
             <div class="product-category__logo product-category__logo--virtual"></div>
             <h3 class="product-category__title">Виртуальная реальность</h3>
           </a>
         </li>
-        <li class="product-categories__item product-category">
+        <li class="product-categories__item">
           <a href="catalog.html">
             <div class="product-category__logo product-category__logo--monopods"></div>
             <h3 class="product-category__title product-category__title--monopods">Моноподы
               для селфи</h3>
           </a>
         </li>
-        <li class="product-categories__item product-category">
+        <li class="product-categories__item">
           <a href="#">
             <div class="product-category__logo product-category__logo--cameras"></div>
             <h3 class="product-category__title">Экшн-камеры</h3>
           </a>
         </li>
-        <li class="product-categories__item product-category">
+        <li class="product-categories__item">
           <a href="#">
             <div class="product-category__logo product-category__logo--bracelets"></div>
             <h3 class="product-category__title">Фитнес-браслеты</h3>
           </a>
         </li>
-        <li class="product-categories__item product-category">
+        <li class="product-categories__item">
           <a href="#">
             <div class="product-category__logo product-category__logo--watch"></div>
             <h3 class="product-category__title">Умные часы</h3>
           </a>
         </li>
-        <li class="product-categories__item product-category">
+        <li class="product-categories__item">
           <a href="#">
             <div class="product-category__logo product-category__logo--quadrocopters"></div>
             <h3 class="product-category__title">Квадрокоптеры</h3>
@@ -219,7 +216,7 @@
             aria-label="Открыть слайд 'Гарантия'">
           <input type="radio" id="services-credit" name="services" class="services-credit visually-hidden"
             aria-label="Открыть слайд 'Кредит'">
-          <ul class="services__list services-list">
+          <ul class="services-list">
             <li>
               <label class="button button-delivery services-list__link" for="services-delivery">Доставка</label>
             </li>
@@ -230,7 +227,7 @@
               <label class="button button-credit services-list__link" for="services-credit">Кредит</label>
             </li>
           </ul>
-          <ul class="services__tabs services-tabs">
+          <ul class="services-tabs">
             <li class="services-tabs__item services-tabs__item--delivery">
               <div class="slide-content tab tab--delivery">
                 <h3 class="section-title">Доставка</h3>
@@ -265,11 +262,11 @@
         </div>
       </div>
     </section>
-    <section class="brands__logo brands container">
+    <section class="brands container">
       <h2 class="visually-hidden">Популярные производители</h2>
       <ul class="brands__list">
         <li>
-          <svg class="brands__logo--1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260"
+          <svg class="brands__logo brands__logo--1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260"
             height="100">
             <defs>
               <filter id="filtersPicture-1">
@@ -427,8 +424,8 @@
       width="960" height="560">
     </iframe>
   </section>
-  <script src="js/feedback.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/feedback.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>
