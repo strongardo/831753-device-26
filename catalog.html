@@ -19,7 +19,7 @@
     <div class="user-functions">
       <form action="#" method="GET" class="search-form">
         <input class="search" type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-        <a href="#" class="search-button"><span class="search-button__text">Найти</span></a>
+        <a href="#" class="search-button" tabindex="-1"><span class="search-button__text">Найти</span></a>
       </form>
       <a class="header-user header-inner__user" href="#">Валентин Петухов</a>
       <ul class="user-navigation">
@@ -80,17 +80,17 @@
         <div class="products-sort">
           <h3 class="uppercase products-sort__title">Сортировка:</h3>
           <form class="sort-form" action="#" method="GET">
-            <input class="visually-hidden" type="radio" name="sort" value="price" id="sort-price" checked>
-            <label class="interactive-catalog" for="sort-price">По цене</label>
-            <input class="visually-hidden" type="radio" name="sort" value="type" id="sort-type">
-            <label class="interactive-catalog sort-type" for="sort-type">По типу</label>
-            <input class="visually-hidden" type="radio" name="sort" value="popular" id="sort-popular">
-            <label class="interactive-catalog" for="sort-popular">По популярности</label>
-            <input class="visually-hidden" type="radio" name="sort-dir" value="up" id="sort-up" checked>
-            <label class="interactive-catalog sort-button sort-button--up" for="sort-up"><span
+            <input class="visually-hidden" type="radio" name="sort" value="price" id="sort-price" tabindex="-1" checked>
+            <label class="interactive-catalog" for="sort-price" tabindex="0">По цене</label>
+            <input class="visually-hidden" type="radio" name="sort" value="type" id="sort-type" tabindex="-1">
+            <label class="interactive-catalog sort-type" for="sort-type" tabindex="0">По типу</label>
+            <input class="visually-hidden" type="radio" name="sort" value="popular" id="sort-popular" tabindex="-1">
+            <label class="interactive-catalog" for="sort-popular" tabindex="0">По популярности</label>
+            <input class="visually-hidden" type="radio" name="sort-dir" value="up" id="sort-up" tabindex="-1" checked>
+            <label class="interactive-catalog sort-button sort-button--up" for="sort-up" tabindex="0"><span
                 class="visually-hidden">Вверх</span></label>
-            <input class="visually-hidden" type="radio" name="sort-dir" value="down" id="sort-down">
-            <label class="interactive-catalog sort-button sort-button--down" for="sort-down"><span
+            <input class="visually-hidden" type="radio" name="sort-dir" value="down" id="sort-down" tabindex="0">
+            <label class="interactive-catalog sort-button sort-button--down" for="sort-down" tabindex="0"><span
                 class="visually-hidden">Вниз</span></label>
           </form>
         </div>

@@ -18,7 +18,7 @@
     <div class="user-functions">
       <form action="#" method="GET" class="search-form">
         <input class="search" type="search" name="search" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-        <a href="#" class="search-button"><span class="search-button__text">Найти</span></a>
+        <a href="#" class="search-button" tabindex="-1"><span class="search-button__text">Найти</span></a>
       </form>
       <ul class="user-navigation header-user">
         <li class="user-navigation__login">
@@ -65,11 +65,11 @@
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
     <section class="popular-products container">
       <input type="radio" id="product-1" name="popular-slider" class="product-1 visually-hidden"
-        aria-label="Открыть первый слайд" checked>
+        aria-label="Открыть первый слайд" tabindex="-1" checked>
       <input type="radio" id="product-2" name="popular-slider" class="product-2 visually-hidden"
-        aria-label="Открыть второй слайд">
+        aria-label="Открыть второй слайд" tabindex="-1">
       <input type="radio" id="product-3" name="popular-slider" class="product-3 visually-hidden"
-        aria-label="Открыть третий слайд">
+        aria-label="Открыть третий слайд" tabindex="-1">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-products__list">
         <li class="popular-products-item">
@@ -154,13 +154,13 @@
       </ul>
       <ul class="control-list">
         <li class="control-list__item">
-          <label for="product-1"></label>
+          <label for="product-1" tabindex="0"></label>
         </li>
         <li class="control-list__item">
-          <label for="product-2"></label>
+          <label for="product-2" tabindex="0"></label>
         </li>
         <li class="control-list__item">
-          <label for="product-3"></label>
+          <label for="product-3" tabindex="0"></label>
         </li>
       </ul>
     </section>
@@ -211,20 +211,20 @@
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-wrapper">
           <input type="radio" id="services-delivery" name="services" class="services-delivery visually-hidden"
-            aria-label="Открыть слайд 'Доставка'" checked>
+            aria-label="Открыть слайд 'Доставка'" tabindex="-1" checked>
           <input type="radio" id="services-warranty" name="services" class="services-warranty visually-hidden"
-            aria-label="Открыть слайд 'Гарантия'">
+            aria-label="Открыть слайд 'Гарантия'" tabindex="-1">
           <input type="radio" id="services-credit" name="services" class="services-credit visually-hidden"
-            aria-label="Открыть слайд 'Кредит'">
+            aria-label="Открыть слайд 'Кредит'" tabindex="-1">
           <ul class="services-list">
             <li>
-              <label class="button button-delivery services-list__link" for="services-delivery">Доставка</label>
+              <label class="button button-delivery services-list__link" for="services-delivery" tabindex="0">Доставка</label>
             </li>
             <li>
-              <label class="button button-warranty services-list__link" for="services-warranty">Гарантия</label>
+              <label class="button button-warranty services-list__link" for="services-warranty" tabindex="0">Гарантия</label>
             </li>
             <li>
-              <label class="button button-credit services-list__link" for="services-credit">Кредит</label>
+              <label class="button button-credit services-list__link" for="services-credit" tabindex="0">Кредит</label>
             </li>
           </ul>
           <ul class="services-tabs">
