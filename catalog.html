@@ -74,7 +74,7 @@
     </div>
     <div class="catalog-header">
       <div class="catalog-header__content container">
-        <div class="filtr__title">
+        <div class="filter__title">
           <h2 class="section-title uppercase">Фильтр:</h2>
         </div>
         <div class="products-sort">
@@ -98,8 +98,8 @@
     </div>
     <div class="wrapper-catalog">
       <div class="wrapper-catalog__content container">
-        <section class="filtr">
-          <div class="filtr-container">
+        <section class="filter">
+          <div class="filter-container">
             <h2 class="visually-hidden">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="GET">
               <fieldset class="filter-item filter-item--price">
@@ -109,8 +109,10 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0" aria-label="Установить минимальное значение стоимости"></div>
-                    <div class="toggle toggle-max" tabindex="0" aria-label="Установить максимальное значение стоимости"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Установить минимальное значение стоимости">
+                    </div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Установить максимальное значение стоимости">
+                    </div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -178,7 +180,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button filtr-link" type="submit"><span class="button-text">Показать</span></button>
+              <button class="button filter-link" type="submit"><span class="button-text">Показать</span></button>
             </form>
           </div>
         </section>
@@ -232,16 +234,13 @@
             </li>
           </ul>
           <div class="products__pagination">
-            <span class="pagination-direct"><a class="uppercase pagination-direct-text" href="#">Назад</a>
-            </span>
+            <a class="uppercase pagination-direct" href="#">Назад</a>
             <ul class="pagination-numeration">
-              <li class="pagination-numeral"><a class="interactive-catalog pagination-page pagination-page--current"
-                  href="#">1</a></li>
-              <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">2</a></li>
-              <li class="pagination-numeral"><a class="interactive-catalog pagination-page" href="#">3</a></li>
+              <li><a class="interactive-catalog pagination-page pagination-page--current" href="#">1</a></li>
+              <li><a class="interactive-catalog pagination-page" href="#">2</a></li>
+              <li><a class="interactive-catalog pagination-page" href="#">3</a></li>
             </ul>
-            <span class="pagination-direct"><a class="uppercase pagination-direct-text" href="#">Вперед</a>
-            </span>
+            <a class="uppercase pagination-direct" href="#">Вперед</a>
           </div>
         </section>
       </div>

@@ -1101,7 +1101,7 @@ ul.services-tabs {
   display: flex;
 }
 
-.filtr__title {
+.filter__title {
   padding-left: 60px;
   padding-top: 23px;
   padding-bottom: 17px;
@@ -1136,7 +1136,7 @@ ul.services-tabs {
   letter-spacing: -0.2px;
 }
 
-.filtr__title h2 {
+.filter__title h2 {
   margin: 0;
   padding: 0;
 }
@@ -1182,7 +1182,7 @@ ul.services-tabs {
   display: flex;
 }
 
-.filtr {
+.filter {
   width: 328px;
 
   background-color: #efefef;
@@ -1196,24 +1196,24 @@ ul.services-tabs {
   background-color: #ffffff;
 }
 
-.filtr-container {
+.filter-container {
   margin-left: 59px;
   margin-right: 65px;
   width: 200px;
 }
 
-.filtr legend, .filtr-cost__title {
+.filter legend, .filter-cost__title {
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
 
-.filtr ul {
+.filter ul {
   list-style: none;
 }
 
-.filtr label {
+.filter label {
   font-size: 14px;
   line-height: 40px;
   color: #000000;
@@ -1261,7 +1261,6 @@ ul.services-tabs {
 }
 
 .input-indicator {
-  content: "";
   position: absolute;
   top: -4px;
   left: 0;
@@ -1423,18 +1422,18 @@ ul.services-tabs {
   background: none;
 }
 
-.filtr-link {
+.filter-link {
   margin-left: 35px;
 }
 
-.filtr-link::before {
+.filter-link::before {
   margin-left: -101.75px;
   width: 200px;
 
   transform: translateY(8px);
 }
 
-.filtr-link:hover::before {
+.filter-link:hover::before {
   transform: translateY(-8px);
 }
 
@@ -1570,7 +1569,6 @@ ul.services-tabs {
 .products__pagination {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   align-items: baseline;
 
   margin-bottom: 76px;
@@ -1581,9 +1579,9 @@ ul.services-tabs {
 }
 
 .pagination-direct {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-left: 30px;
-  padding-right: 26px;
+  padding-right: 23px;
   min-height: 70px;
 }
 
@@ -1591,20 +1589,20 @@ ul.services-tabs {
   background-color: #d9d9d9;
 }
 
-.pagination-direct:active .pagination-direct-text {
-  opacity: 0.3;
+.pagination-direct:active {
+  color: #989898;
 }
 
 .pagination-numeration {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   margin: 0;
+  padding: 0;
   margin-right: auto;
-  margin-left: 190px;
-  padding: 0 20px;
-  width: 125px;
+  margin-left: 213px;
+  width: 150px;
 
   list-style: none;
 }
@@ -1612,6 +1610,7 @@ ul.services-tabs {
 .pagination-numeration li {
   padding: 0;
   margin: 0;
+  margin-right: 30px;
 }
 
 .pagination-page {
