@@ -1260,7 +1260,9 @@ ul.services-tabs {
   padding-left: 40px;
 }
 
-.input-indicator {
+.filter-item--color label::before,
+.filter-item--bluetooth label::before {
+  content: "";
   position: absolute;
   top: -4px;
   left: 0;
@@ -1271,31 +1273,32 @@ ul.services-tabs {
   background-repeat: no-repeat;
 }
 
-.input-indicator:hover {
+.filter-item--color label:hover,
+.filter-item--bluetooth label:hover {
   opacity: 0.6;
 }
 
-.input-indicator--checkbox {
+.filter-item--color label::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-item--color input:checked + .input-indicator--checkbox {
+.filter-item--color input:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.input-indicator--radio {
+.filter-item--bluetooth label::before {
   background-image: url("../img/radio-off.svg");
 }
 
-.filter-item--bluetooth input:checked + .input-indicator--radio {
+.filter-item--bluetooth input:checked + label::before {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-item input:disabled + .input-indicator {
+.filter-item input:disabled + label {
   opacity: 0.25;
 }
 
-.filter-item input:focus + .input-indicator {
+.filter-item input:focus + label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
