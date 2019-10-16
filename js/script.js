@@ -1,3 +1,7 @@
+var mapLink = document.querySelector(".link-map");
+var mapModal = document.querySelector(".modal-map");
+var mapClose = mapModal.querySelector(".modal-close");
+
 var contactLink = document.querySelector(".section__link--contacts");
 var feedbackModal = document.querySelector(".modal-feedback");
 var feedbackClose = feedbackModal.querySelector(".modal-close");
@@ -5,11 +9,31 @@ var form = feedbackModal.querySelector("form");
 var userName = feedbackModal.querySelector("[name=name]");
 var email = feedbackModal.querySelector("[name=email]");
 var message = feedbackModal.querySelector("[name=message]");
-
 var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
 
+//Map
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapModal.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapModal.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapModal.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapModal.classList.remove("modal-show");
+    }
+  }
+});
+
+//Feedback
 try {
   storageName = localStorage.getItem("userName");
   storageEmail = localStorage.getItem("email");

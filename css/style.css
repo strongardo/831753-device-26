@@ -339,14 +339,14 @@ a {
 .user-navigation__login:hover,
 .user-functions__cart:hover,
 .user-functions__compare:hover,
-.header-user:hover {
+.header-inner__user:hover {
   opacity: 0.6;
 }
 
 .user-navigation__login:active,
 .user-functions__cart:active,
 .user-functions__compare:active,
-.header-user:hover:active {
+.header-inner__user:hover:active {
   opacity: 0.3;
 }
 
